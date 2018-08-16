@@ -1,21 +1,24 @@
-//iprimir um texto pergunttar genero perguntar clase perguntar talento
+//Inicio
+  //Necessario especificar qual classe ser√° utilizada como heroi principal
+  //Necessario especificar qual o sexo do perssonagem
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
 
 int main(){
 	int a = 1, b = 0;
-	void strat(void);
+	void start(void);
 	while(a == 1){
 		printf("---menu--- \n\n");
-		printf("1-Strat newgame \n");
-		printf("2-Strat oldgame\n");
+		printf("1-Start newgame \n");
+		printf("2-Start oldgame\n");
 		printf("3-Options \n");
 		printf("4-Quit \n");
 		printf("\n******************************************* \n");
 		scanf("%d",&b);
 		if(b == 1){
-			strat();
+			start();
 		}
 		else if(b == 3){a = 0;}
 		else{}
@@ -23,12 +26,12 @@ int main(){
 	}
 }
 
-void strat(void){
+void start(void){
 	int a, b, c, sex, talent, clssA;
 	int choiceSex(void), choiceTalent(void), choiceClssA(void);
-	printf("VocÍ esta comeÁando uma nova aventura...\n");
-	printf("antes de todo aventura e necesario preparaÁ„o.\n");
-	printf("ent„o por favor me reponda...\n");
+	printf("Voc√™ esta come√ßando uma nova aventura...\n");
+	printf("antes de todo aventura e necesario prepara√ß√£o.\n");
+	printf("ent√£o por favor me reponda...\n");
 
 	printf("\n");
 	sex = choiceSex();
@@ -63,7 +66,7 @@ int choiceSex(void){
 int choiceClssA(void){
 	int a = 1, b;
 	while(a == 1){
-		printf("Selecione ua classe:\n1-gerreiro\n2-arqueiro\n3-mago\n4-lad„o\n5-teplario\n");
+		printf("Selecione ua classe:\n1-gerreiro\n2-arqueiro\n3-mago\n4-lad√£o\n5-teplario\n");
 		scanf("%d",&b);
 		if(b == 1){a = 0;}
 		else if(b == 2){a = 0;}
