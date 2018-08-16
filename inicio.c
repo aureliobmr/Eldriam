@@ -5,26 +5,39 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include <locale.h>
 
 int main(){
-	int a = 1, b = 0;
-	void start(void);
+	
+	setlocale(LC_ALL, "Portuguese");
+	menu();
+
+}
+
+void menu(void){
+	int a = 1, b = 0;	
+	
 	while(a == 1){
-		printf("---menu--- \n\n");
-		printf("1-Start newgame \n");
-		printf("2-Start oldgame\n");
-		printf("3-Options \n");
-		printf("4-Quit \n");
+		printf("-----Menu----- \n\n");
+		printf("1-Start New Game\n");
+		printf("x2-Start Load Game\n");
+		printf("x3-Options\n");
+		printf("4-Quit\n");
 		printf("\n******************************************* \n");
+		
 		scanf("%d",&b);
+		
 		if(b == 1){
 			start();
 		}
-		else if(b == 3){a = 0;}
-		else{}
+		
+		else if(b == 4){
+			a = 0;
+		}
 		system("cls");
 	}
 }
+
 
 void start(void){
 	int a, b, c, sex, talent, clssA;
@@ -39,7 +52,7 @@ void start(void){
 	printf("\n");
 	printf("\n");
 	printf("\n");
-	printf(" \n");
+	printf("\n");
 	clssA = choiceClssA();
 
 	printf("\n");
